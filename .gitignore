@@ -45,3 +45,5 @@ cn/images/audio1.m4a
 *.mp4
 cn/images/audio1.ogg
 .project
+*.m4a
+*.ogg

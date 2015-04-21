@@ -67,7 +67,6 @@
 		t1.call(function(){
 			$('.content').hide();
 			$("#home").show();
-			$('.controls').show();
 			
 			splitText($("#home h1.l1"));
 			splitText($("#home h1.l2"));
@@ -76,7 +75,7 @@
 			var tl = new TimelineMax({repeat:0});
 			tl.staggerFrom(txt, 0.4, {alpha:0}, 0.06, "textEffect");
         	tl.staggerFrom(txt, 0.8, {rotationY:"-270deg", top:80, transformOrigin: "50% 50% -80"}, 0.06, "textEffect");
-        	tl.staggerTo(txt, 0.6, {rotationX:"360deg", color:"#e6e4d9", transformOrigin:"50% 50% 10"}, 0.02); 
+        	tl.staggerTo(txt, 0.6, {rotationX:"360deg", color:"#fff", transformOrigin:"50% 50% 10"}, 0.02); 
 			tl.from($("#home .text"), 1, {left: "-1000px", alpha: 0}, "-=1");
 			
 			var last = {
@@ -89,6 +88,8 @@
 			
 			$(document).one('click', function(){
 				$("#home").hide();
+				$('.controls').show();
+				$("#jquery_jplayer_1").jPlayer('pause');
 				var knav = $(".scroll-nav").knav({
 					move: function(index, subIndex) {
 						last.index = curr.index;
@@ -191,6 +192,57 @@
 				knav.show();
 			});
 		});
+		
+		$("#jquery_jplayer_1").jPlayer({
+	        ready: function () {
+	          var audioPlayer = $(this).jPlayer("setMedia", {
+	            title: "Bubble",
+	            m4a: "images/audio1.m4a",
+	            oga: "images/audio1.ogg"
+	          });
+	          audioPlayer.jPlayer('play');
+	        },
+	        swfPath: "js/lib/jplayer/jplayer",
+	        supplied: "m4a, oga",
+	        useStateClassSkin: true,
+	        cssSelectorAncestor: '#jp_container_1'
+	      });
+	      
+	      $("#jquery_jplayer_2").jPlayer({
+	        ready: function () {
+	          $(this).jPlayer("setMedia", {
+	            title: "Touchic 动态刊例",
+	            m4v: "images/video1.mp4",
+	          });
+	        },
+	        cssSelectorAncestor: "#jp_container_2",
+	        swfPath: "js/lib/jplayer/jplayer",
+	        supplied: "m4v, ogv",
+	        useStateClassSkin: true,
+	        autoBlur: false,
+	        smoothPlayBar: true,
+	        keyEnabled: true,
+	        remainingDuration: true,
+	        toggleDuration: true
+	      });
+	      
+	      $("#jquery_jplayer_3").jPlayer({
+	        ready: function () {
+	          $(this).jPlayer("setMedia", {
+	            title: "Touchic 动态刊例",
+	            m4v: "images/video1.mp4",
+	          });
+	        },
+	        cssSelectorAncestor: "#jp_container_3",
+	        swfPath: "js/lib/jplayer/jplayer",
+	        supplied: "m4v, ogv",
+	        useStateClassSkin: true,
+	        autoBlur: false,
+	        smoothPlayBar: true,
+	        keyEnabled: true,
+	        remainingDuration: true,
+	        toggleDuration: true
+	      });
 		
 		// t1.call(function(){
 			// var knav = $(".scroll-nav").knav({

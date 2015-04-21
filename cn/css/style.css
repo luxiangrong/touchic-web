@@ -1011,5 +1011,96 @@ section#welcome article .text.text-5 p strong.right {
 }
 #jp_container_2 {
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 160px;
+  position: relative;
+  border-width: 0px;
+}
+#jp_container_2 .jp-interface {
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  background-color: #1e1e1e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#jp_container_2 .jp-interface .jp-duration,
+#jp_container_2 .jp-interface .jp-current-time {
+  color: #DDDDDD;
+}
+#jp_container_2:hover .jp-interface {
+  bottom: 0px;
+}
+.visible-pc,
+.visible-sp {
+  display: none;
+}
+@media (max-width: 590px) {
+  .visible-sp {
+    display: block;
+  }
+}
+@media (min-width: 591px) {
+  .visible-pc {
+    display: block;
+  }
+}
+@media (max-width: 590px) {
+  .hidden-sp {
+    display: none;
+  }
+}
+@media (min-width: 591px) {
+  .hidden-pc {
+    display: none;
+  }
+}
+.sp .header h1 {
+  color: #363636;
+  font-family: "FZLTZH";
+  font-size: 32px;
+  text-align: center;
+  font-weight: normal;
+}
+.sp .sp-content h2 {
+  padding: 0 15px;
+}
+.sp .sp-content h3 {
+  color: #7f7f7f;
+  font-family: "FZLTZH";
+  font-size: 18px;
+  font-weight: normal;
+  padding: 0 15px;
+}
+.sp .sp-content .img-wrap {
+  width: 100%;
+}
+.sp .sp-content .img-wrap img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.sp .sp-footer .copyright {
+  font-family: "FZLTZH";
+  font-size: 18px;
+  color: #474747;
+  padding: 0 30px;
+}
+.sp .sp-footer .share-us {
+  padding: 0 30px;
+}
+.sp .sp-footer .share-us h5 {
+  font-family: "FZLTZH";
+  font-size: 14px;
+  color: #7f7f7f;
+  text-align: center;
+}
+.sp .sp-footer .share-us .shejiao {
+  height: 30px;
+  text-align: center;
+  background: url(../images/bg01.png) no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.sp .sp-footer .share-us .shejiao img {
+  height: 100%;
+  margin: 0 5px;
 }
