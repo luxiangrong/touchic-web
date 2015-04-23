@@ -245,13 +245,19 @@
 	      });
 		
 		$(window).on('load', function(){
-			$('.menu-content').height($('.sp').height());
+			// $('.menu-content').height($('.sp').height());
 		});
 		$('.btn-menu').on('click', function(e){
 			e.preventDefault();
 			$('.menu-content').slideToggle();
 			$(this).find('.icon').toggleClass('icon-menu icon-close');
+			if($(this).find('.icon').hasClass('icon-menu')) {
+				$('body').removeClass('lock-position')
+			} else {
+				$('body').addClass('lock-position')
+			}
 		});
+		
 		
 		$('.sub-nav-toggle').on('click', function(e){
 			$(this).find('+ .sub-nav').slideToggle();

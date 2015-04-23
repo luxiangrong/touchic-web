@@ -799,14 +799,14 @@ section {
 }
 
 .sp {
-  padding-top: 30px;
+  padding-top: 60px;
   .btn-a {
     &.btn-menu {
       width: 24px;
       height: 24px;
       position: absolute;
       left: 10px;
-      top: 10px;
+      top: 15px;
       line-height: 24px;
       text-align: center;
       .icon {
@@ -835,48 +835,50 @@ section {
     h1 {
       color: #363636;
       font-family: "FZLTZH";
-      font-size: 16px;
+      font-size: 28px;
       text-align: center;
       font-weight: normal;
       margin: 0;
     }
   }
   .menu-content {
-    position: absolute;
+    position: fixed;
     display: none;
     z-index: 1;
     width: 100%;
     height: 100%;
-    top: 30px;
+    top: 50px;
     left: 0;
     color: #7f7f7f;
     background-color: #ffffff;
+    overflow-y: auto;
     h3 {
       padding: 0 10px;
+      font-weight: normal;
+      margin-bottom: 50px;
     }
     .nav {
-        border-top: 1px solid #b5b5b5;
-        li {
-         padding: 0 10px;
-         line-height: 40px;
-         border-bottom: 1px solid #b5b5b5;
-         &.switch-language {
-           margin-top: 30px;
-           font-size: 14px;
+        border-top: 1px solid #eeeeee;
+        &.switch-language {
+          margin-top: 60px;
+          font-size: 14px;
            .sub-nav {
              font-size:12px;
            }
-         }
+        }
+        li {
+         padding: 0 10px;
+         line-height: 60px;
+         border-bottom: 1px solid #eeeeee;
          a {
            color: #7f7f7f;
            text-decoration: none;
          }
          .sub-nav {
-           margin-bottom: 10px;
-           padding-top: 10px;
            display: none;
            font-size: 14px;
            li {
+             line-height: 50px;
              text-align: center;
              &:last-child {
                border-bottom: none;
@@ -888,7 +890,7 @@ section {
             height: 20px;
             display: inline-block;
             float: right;
-            margin-top: 10px;
+            margin-top: 20px;
             margin-right: 10px;
             &.icon-arraw-down {
               background: url(../images/arraw_down.png) center center no-repeat;
@@ -905,41 +907,58 @@ section {
   .sp-content {
     h2 {
       padding: 0 15px;
-      font-size: 16px;
+      font-size: 20px;
+      margin-bottom: 0px;
     }
     h3 {
       color: #7f7f7f;
-      font-family: "FZLTZH";
       font-size: 16px;
       font-weight: normal;
-      padding: 0 15px
+      padding: 0 15px;
+      margin-top: 0px;
     }
     .img-wrap {
       width: 100%;
       img {
+        display: block;
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+      }
+      .jp-video {
+        background-color: #000;
+        width: 100% !important;
+        height: auto !important;
+        border: none;
+        .jp-jplayer {
+          width: 100% !important;
+          margin: 0 auto;
+        }
       }
     }
   }
   .sp-footer {
+    padding-bottom: 20px;
     .copyright {
-      font-family: "FZLTZH";
       font-size: 18px;
       color: #474747;
-      padding: 0 30px;
+      padding: 0 15px;
+      margin-top: 20px;
+      p {
+        margin: 0px;
+      }
     }
     .share-us {
-      padding: 0 30px;
+      padding: 0 15px;
     }
   }
   .share-us {
+    margin-top: 40px;
     padding: 0 10px;
     h5 {
-      font-family: "FZLTZH";
       font-size: 14px;
       color: #7f7f7f;
       text-align: center;
+      font-weight: normal;
     }
     .shejiao {
       height: 20px;
@@ -948,8 +967,15 @@ section {
       background-size: contain;
       img {
         height: 100%;
-        margin: 0 5px;
+        margin: 0 3.6%;
       }
     }
   }
+}
+
+body.lock-position {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
 }
