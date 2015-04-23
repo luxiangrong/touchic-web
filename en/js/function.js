@@ -197,8 +197,8 @@
 	        ready: function () {
 	          var audioPlayer = $(this).jPlayer("setMedia", {
 	            title: "Bubble",
-	            m4a: "http://caseshow-demo.stor.sinaapp.com/audio1.m4a",
-	            oga: "http://caseshow-demo.stor.sinaapp.com/audio1.ogg"
+	            m4a: "images/audio1.m4a",
+	            oga: "images/audio1.ogg"
 	          });
 	          audioPlayer.jPlayer('play');
 	        },
@@ -212,7 +212,7 @@
 	        ready: function () {
 	          $(this).jPlayer("setMedia", {
 	            title: "Touchic 动态刊例",
-	            m4v: "http://caseshow-demo.stor.sinaapp.com/video1.mp4",
+	            m4v: "images/video1.mp4",
 	          });
 	        },
 	        cssSelectorAncestor: "#jp_container_2",
@@ -225,34 +225,45 @@
 	        remainingDuration: true,
 	        toggleDuration: true
 	      });
+	      
+	      $("#jquery_jplayer_3").jPlayer({
+	        ready: function () {
+	          $(this).jPlayer("setMedia", {
+	            title: "Touchic 动态刊例",
+	            m4v: "images/video1.mp4",
+	          });
+	        },
+	        cssSelectorAncestor: "#jp_container_3",
+	        swfPath: "js/lib/jplayer/jplayer",
+	        supplied: "m4v, ogv",
+	        useStateClassSkin: true,
+	        autoBlur: false,
+	        smoothPlayBar: true,
+	        keyEnabled: true,
+	        remainingDuration: true,
+	        toggleDuration: true
+	      });
 		
-		// t1.call(function(){
-			// var knav = $(".scroll-nav").knav({
-				// move: function(index, subIndex) {
-					// $('.content').hide();
-					// switch(index) {
-						// case 3:
-							// var section = $("[data-index=" + index + "]");
-							// TweenMax.fromTo(section.find('.col-avator'), 1 ,{rotationY:0, transformOrigin:"50% 50%"}, {rotationY:360, transformOrigin:"50% 50%"});
-							// TweenMax.fromTo(section.find('.col-description'), 1 ,{rotationY:0, transformOrigin:"50% 50%"}, {rotationY:360, transformOrigin:"50% 50%"});
-							// $("[data-index=3][data-sub-index=" + subIndex + "]").show();
-							// break;
-						// default:
-							// var section = $("[data-index=" + index + "]");
-// 							
-							// TweenMax.fromTo(section, 1 ,{rotationY:0, transformOrigin:"50% 50%"}, {rotationY:360, transformOrigin:"50% 50%"});
-							// section.show();
-// 							
-							// break;
-					// }
-				// },
-				// initIndex: 0,
-				// initSubIndex: 0
-			// });
-			// knav.show();
-		// });
+		$(window).on('load', function(){
+			$('.menu-content').height(winHeight - 50);
+			// $('.menu-content').height($('.sp').height());
+		});
+		$('.btn-menu').on('click', function(e){
+			e.preventDefault();
+			$('.menu-content').slideToggle();
+			$(this).find('.icon').toggleClass('icon-menu icon-close');
+			if($(this).find('.icon').hasClass('icon-menu')) {
+				$('body').removeClass('lock-position')
+			} else {
+				$('body').addClass('lock-position')
+			}
+		});
 		
-
+		
+		$('.sub-nav-toggle').on('click', function(e){
+			$(this).find('+ .sub-nav').slideToggle();
+			$(this).toggleClass('icon-arraw-down icon-arraw-up');
+		});
 	});
 })(jQuery);
 

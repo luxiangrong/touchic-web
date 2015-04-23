@@ -245,6 +245,7 @@
 	      });
 		
 		$(window).on('load', function(){
+			$('.menu-content').height(winHeight - 50);
 			// $('.menu-content').height($('.sp').height());
 		});
 		$('.btn-menu').on('click', function(e){

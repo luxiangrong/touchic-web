@@ -1011,5 +1011,227 @@ section#welcome article .text.text-5 p strong.right {
 }
 #jp_container_2 {
   margin: 0 auto;
-  margin-top: 140px;
+  margin-top: 160px;
+  position: relative;
+  border-width: 0px;
+}
+#jp_container_2 .jp-interface {
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  background-color: #1e1e1e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#jp_container_2 .jp-interface .jp-duration,
+#jp_container_2 .jp-interface .jp-current-time {
+  color: #DDDDDD;
+}
+#jp_container_2:hover .jp-interface {
+  bottom: 0px;
+}
+.visible-pc,
+.visible-sp {
+  display: none;
+}
+@media (max-width: 590px) {
+  .visible-sp {
+    display: block;
+  }
+}
+@media (min-width: 591px) {
+  .visible-pc {
+    display: block;
+  }
+}
+@media (max-width: 590px) {
+  .hidden-sp {
+    display: none;
+  }
+}
+@media (min-width: 591px) {
+  .hidden-pc {
+    display: none;
+  }
+}
+.sp {
+  padding-top: 60px;
+}
+.sp .btn-a.btn-menu {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  line-height: 24px;
+  text-align: center;
+}
+.sp .btn-a.btn-menu .icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.sp .btn-a.btn-menu .icon.icon-menu {
+  background: url(../images/mob_menu_ico_nero.png) center center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.sp .btn-a.btn-menu .icon.icon-close {
+  background: url(../images/menu_chiudi_black.png) center center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.sp .header {
+  position: fixed;
+  padding: 10px 0px 8px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.sp .header h1 {
+  color: #363636;
+  font-family: "FZLTZH";
+  font-size: 28px;
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+}
+.sp .menu-content {
+  position: fixed;
+  display: none;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 50px;
+  left: 0;
+  color: #7f7f7f;
+  background-color: #ffffff;
+  overflow-y: auto;
+}
+.sp .menu-content h3 {
+  padding: 0 10px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+.sp .menu-content .nav {
+  border-top: 1px solid #eeeeee;
+}
+.sp .menu-content .nav.switch-language {
+  margin-top: 60px;
+  font-size: 14px;
+}
+.sp .menu-content .nav.switch-language .sub-nav {
+  font-size: 12px;
+}
+.sp .menu-content .nav li {
+  padding: 0 10px;
+  line-height: 60px;
+  border-bottom: 1px solid #eeeeee;
+}
+.sp .menu-content .nav li a {
+  color: #7f7f7f;
+  text-decoration: none;
+}
+.sp .menu-content .nav li .sub-nav {
+  display: none;
+  font-size: 14px;
+}
+.sp .menu-content .nav li .sub-nav li {
+  line-height: 50px;
+  text-align: center;
+}
+.sp .menu-content .nav li .sub-nav li:last-child {
+  border-bottom: none;
+}
+.sp .menu-content .nav li .icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.sp .menu-content .nav li .icon.icon-arraw-down {
+  background: url(../images/arraw_down.png) center center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.sp .menu-content .nav li .icon.icon-arraw-up {
+  background: url(../images/arraw_up.png) center center no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.sp .sp-content h2 {
+  padding: 0 15px;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.sp .sp-content h3 {
+  color: #7f7f7f;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0 15px;
+  margin-top: 0px;
+}
+.sp .sp-content .img-wrap {
+  width: 100%;
+}
+.sp .sp-content .img-wrap img {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.sp .sp-content .img-wrap .jp-video {
+  background-color: #000;
+  width: 100% !important;
+  height: auto !important;
+  border: none;
+}
+.sp .sp-content .img-wrap .jp-video .jp-jplayer {
+  width: 100% !important;
+  margin: 0 auto;
+}
+.sp .sp-footer {
+  padding-bottom: 20px;
+}
+.sp .sp-footer .copyright {
+  font-size: 18px;
+  color: #474747;
+  padding: 0 15px;
+  margin-top: 20px;
+}
+.sp .sp-footer .copyright p {
+  margin: 0px;
+}
+.sp .sp-footer .share-us {
+  padding: 0 15px;
+}
+.sp .share-us {
+  margin-top: 40px;
+  padding: 0 10px;
+}
+.sp .share-us h5 {
+  font-size: 14px;
+  color: #7f7f7f;
+  text-align: center;
+  font-weight: normal;
+}
+.sp .share-us .shejiao {
+  height: 20px;
+  text-align: center;
+  background: url(../images/bg01.png) no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.sp .share-us .shejiao img {
+  height: 100%;
+  margin: 0 3.6%;
+}
+body.lock-position {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  position: fixed;
 }
