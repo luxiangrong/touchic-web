@@ -920,6 +920,12 @@ section#welcome article .text.text-5 p strong.right {
   width: 100% !important;
   margin: 0 auto;
 }
+.sp .sp-content .img-wrap #jp_container_3 .jp-jplayer {
+  max-width: 100% !important;
+}
+.sp .sp-content .img-wrap #jp_container_3 .jp-jplayer video {
+  max-width: 100% !important;
+}
 .sp .sp-footer {
   padding-bottom: 20px;
 }
