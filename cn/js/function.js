@@ -253,9 +253,9 @@
 			$('.menu-content').slideToggle();
 			$(this).find('.icon').toggleClass('icon-menu icon-close');
 			if($(this).find('.icon').hasClass('icon-menu')) {
-				$('body').removeClass('lock-position')
+				$('body').removeClass('lock-position');
 			} else {
-				$('body').addClass('lock-position')
+				$('body').addClass('lock-position');
 			}
 		});
 		
@@ -263,6 +263,15 @@
 		$('.sub-nav-toggle').on('click', function(e){
 			$(this).find('+ .sub-nav').slideToggle();
 			$(this).toggleClass('icon-arraw-down icon-arraw-up');
+		});
+		
+		
+		$('.more').on('click', function(e){
+			$(this).closest('.sp-content').find('.content-wrap:hidden:eq(0)').slideDown();
+			
+			if($(this).closest('.sp-content').find('.content-wrap:hidden:eq(0)').length == 0) {
+				$(this).parent().hide();
+			}
 		});
 	});
 })(jQuery);

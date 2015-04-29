@@ -890,6 +890,23 @@ section#welcome article .text.text-5 p strong.right {
   background: url(../images/arraw_up.png) center center no-repeat;
   background-size: contain;
 }
+.sp .mb-50 {
+  margin-bottom: 50px;
+}
+.sp .mt-100 {
+  margin-top: 100px;
+}
+.sp .sp-content h1 {
+  font-size: 24px;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #474747;
+  line-height: 50px;
+  margin: 0;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 20px;
+}
 .sp .sp-content h2 {
   padding: 0 15px;
   font-size: 20px;
@@ -925,6 +942,70 @@ section#welcome article .text.text-5 p strong.right {
 }
 .sp .sp-content .img-wrap #jp_container_3 .jp-jplayer video {
   max-width: 100% !important;
+}
+.sp .sp-content .img-wrap.img-wrap-qr img {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.sp .sp-content .img-wrap.img-wrap-qr p {
+  text-align: center;
+}
+.sp .sp-content .more-wrap {
+  text-align: center;
+}
+.sp .sp-content .more {
+  background-color: #f1f1f1;
+  padding: 8px 10px;
+  border: none;
+}
+.sp .sp-content .more .caret {
+  margin-right: 2em;
+}
+.sp .sp-content .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.sp .sp-content .content-wrap {
+  padding: 0 10px;
+}
+.sp .sp-content .content-wrap.full-screen {
+  padding: 0;
+}
+.sp .sp-content .content-wrap.full-screen .split,
+.sp .sp-content .content-wrap.full-screen p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.sp .sp-content .content-wrap.hidden {
+  display: none;
+}
+.sp .sp-content .content-wrap h2 {
+  text-align: center;
+  color: #0e0e0e;
+}
+.sp .sp-content .content-wrap .office {
+  text-align: center;
+  font-size: 18px;
+  color: #7f7f7f;
+  margin-top: 30px;
+}
+.sp .sp-content .content-wrap .split {
+  text-align: center;
+  background: url(../images/bg01.png) no-repeat center center;
+  background-size: contain;
+  height: 16px;
+  color: #7f7f7f;
+  margin: 10px 0;
+}
+.sp .sp-content .content-wrap p {
+  color: #7f7f7f;
 }
 .sp .sp-footer {
   padding-bottom: 20px;

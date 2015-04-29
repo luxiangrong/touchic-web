@@ -904,7 +904,26 @@ section {
        }
     }
   }
+  
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+  .mt-100 {
+    margin-top: 100px;
+  }
+  
   .sp-content {
+    h1 {
+      font-size: 24px;
+      text-align: center;
+      background-color: #f4f4f4;
+      color: #474747;
+      line-height: 50px;
+      margin: 0;
+      border-top: 1px solid #dedede;
+      border-bottom: 1px solid #dedede;
+      margin-bottom: 20px;
+    }
     h2 {
       padding: 0 15px;
       font-size: 20px;
@@ -919,6 +938,7 @@ section {
     }
     .img-wrap {
       width: 100%;
+      
       img {
         display: block;
         width: 100%;
@@ -941,6 +961,80 @@ section {
              max-width: 100% !important;
            }
         }
+      }
+      &.img-wrap-qr {
+        img {
+          width: 50%;
+          display: block;
+          margin: 0 auto;
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+    .more-wrap {
+      text-align: center;
+    }
+    .more {
+      background-color: #f1f1f1;
+      &:hover {
+        // background-color: darken(#f1f1f1, 10%);
+      }
+      padding: 8px 10px;
+      border: none;
+      .caret {
+        margin-right: 2em;
+      }
+    }
+    
+    .caret {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 2px;
+      vertical-align: middle;
+      border-top: 4px dashed;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+    .content-wrap {
+      
+      padding: 0 10px;
+      &.full-screen {
+        padding: 0;
+        .split,
+        p {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+      &.hidden {
+        display: none;
+      }
+      
+      h2 {
+        text-align: center;
+        color: #0e0e0e;
+      }
+      
+      .office {
+        text-align: center;
+        font-size: 18px;
+        color: #7f7f7f;
+        margin-top: 30px;
+      }
+      .split {
+        text-align: center;
+        background: url(../images/bg01.png) no-repeat center center;
+        background-size: contain;
+        height: 16px;
+        color: #7f7f7f;
+        margin: 10px 0;
+      }
+      
+      p {
+        color: #7f7f7f;
       }
     }
   }
