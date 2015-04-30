@@ -827,6 +827,10 @@ section#welcome article .text.text-5 p strong.right {
   font-weight: normal;
   margin: 0;
 }
+.sp .header h1 a {
+  color: #363636;
+  text-decoration: none;
+}
 .sp .menu-content {
   position: fixed;
   display: none;
@@ -897,11 +901,11 @@ section#welcome article .text.text-5 p strong.right {
   margin-top: 100px;
 }
 .sp .sp-content h1 {
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   background-color: #f4f4f4;
   color: #474747;
-  line-height: 50px;
+  line-height: 40px;
   margin: 0;
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
@@ -955,12 +959,18 @@ section#welcome article .text.text-5 p strong.right {
   text-align: center;
 }
 .sp .sp-content .more {
+  position: relative;
   background-color: #f1f1f1;
-  padding: 8px 10px;
+  text-align: center;
+  padding: 8px 40px;
   border: none;
+  font-size: 12px;
 }
 .sp .sp-content .more .caret {
-  margin-right: 2em;
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  margin-right: 1em;
 }
 .sp .sp-content .caret {
   display: inline-block;
@@ -1000,9 +1010,11 @@ section#welcome article .text.text-5 p strong.right {
   text-align: center;
   background: url(../images/bg01.png) no-repeat center center;
   background-size: contain;
-  height: 16px;
+  height: 14px;
   color: #7f7f7f;
   margin: 10px 0;
+  padding-bottom: 10px;
+  vercail-align: middle;
 }
 .sp .sp-content .content-wrap p {
   color: #7f7f7f;
